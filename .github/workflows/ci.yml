@@ -1,0 +1,18 @@
+name: CI
+
+on:
+  push:
+    branches: [master]
+  pull_request:
+
+jobs:
+  proposal:
+    name: proposal (typst compile)
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: proposal
+    steps:
+      - uses: actions/checkout@v4
+      - uses: typst-community/setup-typst@v3
+      - run: typst compile main.typ
