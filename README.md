@@ -6,4 +6,4 @@ This repo tracks the progress of the final project for AC209a @ Harvard for Fall
 
 `./proposal/`
 
-Full proposal can be found [here](./proposal/README.md).
+Full proposal can be found [here](./proposal/main.typ).
